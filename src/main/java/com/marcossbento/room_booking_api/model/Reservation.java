@@ -16,8 +16,10 @@ public class Reservation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "start_time")
     private LocalDateTime start;
 
+    @Column(name = "end_time")
     private LocalDateTime end;
 
     @ManyToOne
